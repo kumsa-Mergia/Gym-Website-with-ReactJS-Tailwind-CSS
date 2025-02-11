@@ -8,6 +8,7 @@ import ResponsiveMemu from "./ResponsiveMemu";
 const Navbar = () => {
   const [open, setOpen] = useState(false); // ✅ Correctly defined state
 
+
   return (
     <>
       <nav>
@@ -15,8 +16,8 @@ const Navbar = () => {
           {/* Logo section */}
           <div className="text-2xl flex items-center gap-2 font-bold uppercase">
             <FaDumbbell />
-            <p>coders</p>
-            <p className="text-orange-300">Gym</p>
+            <p className="text-cyan-500">ትልቅ</p>
+            <p>Gym</p>
           </div>
 
           {/* Menu section */}
@@ -36,16 +37,16 @@ const Navbar = () => {
           </div>
 
           {/* Icons section */}
-          <div>
-            <button className="text-2xl hover:bg-orange-300 hover:text-white rounded-full p-2 transition">
+          <div className="flex">
+            <button className="text-2xl hover:bg-cyan-500 hover:text-white rounded-full p-2 transition">
               <CiSearch className="text-current" />
             </button>
 
-            <button className="text-2xl hover:bg-orange-300 hover:text-white rounded-full p-2 transition">
+            <button className="text-2xl hover:bg-cyan-500 hover:text-white rounded-full p-2 transition">
               <CiShoppingCart className="text-current" />
             </button>
 
-            <button className="hover:bg-orange-500 text-orange-300 font-semibold hover:text-white rounded-md border-2 border-orange-300 px-6 py-2 transition duration-200 hidden md:block">
+            <button className="hover:bg-cyan-500 text-cyan-300 font-semibold hover:text-white rounded-md border-2 border-cyan-300 px-6 py-2 transition duration-200 hidden md:block">
               Login
             </button>
           </div>
