@@ -46,11 +46,7 @@ npm run build
 ```
 The generated `dist` folder can be deployed to platforms like **Netlify, Vercel, or GitHub Pages**.
 
-## 🤝 Contributing
-Contributions are welcome! Feel free to fork the repository and submit a pull request.
 
-## 📜 License
-This project is open-source and available under the **MIT License**.
 
 ---
 **Author:** Kumsa Mergia
