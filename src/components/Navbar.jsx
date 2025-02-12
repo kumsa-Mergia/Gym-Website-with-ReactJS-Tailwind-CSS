@@ -22,12 +22,12 @@ const Navbar = () => {
 
           {/* Menu section */}
           <div className="hidden md:block">
-            <ul className="flex items-center gap-6 text-gray-600">
+            <ul className="flex items-center text-gray-600">
               {NavbarMenu.map((item) => (
                 <li key={item.id}>
                   <a
                     href={item.link}
-                    className="inline-block py-1 px-3 hover:text-orange-600 font-semibold"
+                    className="inline-block py-1 px-3 hover:text-cyan-500 font-semibold"
                   >
                     {item.title}
                   </a>

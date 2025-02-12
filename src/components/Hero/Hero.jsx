@@ -40,18 +40,18 @@ const Hero = () => {
                 animate="visible"
                 className="flex justify-center items-center gap-8 md:justify-start !mt-4"
               >
-                <button className="bg-cyan-500 flex items-center gap-2  p-2 text-white">
+                <button className="bg-cyan-500 flex items-center gap-2 rounded-md border-2 p-2 text-white">
                   {" "}
                   Order Now
                 </button>
-                <button className="hover:bg-cyan-500 hover:text-white flex justify-center items-center gap-2   p-2">
+                <button className="hover:bg-cyan-500 hover:text-white flex justify-center items-center gap-2 rounded-md border-2 p-2">
                   <FaPlay /> Watch Now
                 </button>
               </motion.div>
             </div>
           </div>
           {/* Brand Image */}
-          <div className="flex justify-center items-center rounded-full">
+          <div className="flex justify-center items-center rounded-md">
             <motion.img
               variants={Rotate(0.5)}
               initial="hidden"
