@@ -1,29 +1,18 @@
-# Use an official Node.js runtime as a parent image
-FROM node:18-alpine AS build
+FROM node:18-alpine
 
-# Set the working directory
+# Set the working directory inside the container
 WORKDIR /app
 
-# Copy package.json and package-lock.json before other files to leverage caching
-COPY package.json package-lock.json ./
+# Copy the package.json file and install dependencies
+COPY package.json ./
 
-# Install dependencies
 RUN npm install
 
-# Copy the rest of the application files
-COPY . .
+# Copy the rest of the application code
+COPY . ./
 
-# Build the app
-RUN npm run build
+# Expose port 8080 to the outside world (as per vite config)
+EXPOSE 8080
 
-# Use Nginx to serve the built files
-FROM nginx:alpine
-
-# Copy built files to Nginx's serving directory
-COPY --from=build /app/dist /usr/share/nginx/html
-
-# Expose port 80
-EXPOSE 80
-
-# Start Nginx
-CMD ["nginx", "-g", "daemon off;"]
+# Use 'npm run dev' to start Vite's development server
+CMD ["npm", "run", "dev"]
