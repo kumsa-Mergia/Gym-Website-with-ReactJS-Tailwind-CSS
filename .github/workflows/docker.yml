@@ -36,13 +36,6 @@ jobs:
     - name: Run Tests (Skip if No Tests Exist)
       run: npm test -- --passWithNoTests
 
-    # - name: Deploy with gh-pages
-    #   run: |
-    #     git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-    #     npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
-    #   env:
-    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
   docker-build:
     needs: build
     runs-on: ubuntu-latest
@@ -54,8 +47,8 @@ jobs:
     - name: Log in to Docker Hub
       uses: docker/login-action@v3
       with:
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+        username: ${{ secrets.DOCKER_USERNAME }}  # Docker username stored as a secret
+        password: ${{ secrets.DOCKER_PASSWORD }}  # Docker password stored as a secret
 
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v3
@@ -66,4 +59,4 @@ jobs:
         context: .
         file: Dockerfile
         push: true
-        tags: your-docker-username/my-vite-app:latest
+        tags: kumsam/my-vite-app:latest  # Replace with your Docker repository and image name
