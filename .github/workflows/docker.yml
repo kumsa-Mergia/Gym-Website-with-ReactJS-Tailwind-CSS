@@ -59,4 +59,4 @@ jobs:
         context: .
         file: Dockerfile
         push: true
-        tags: kumsam/Gym-Website:latest  # Replace with your Docker repository and image name
+        tags: kumsam/gym-website:latest  # Replace with your Docker repository and image name
