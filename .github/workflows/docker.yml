@@ -34,7 +34,7 @@ jobs:
       run: npm run build --if-present
 
     - name: Run Tests (Skip if No Tests Exist)
-      run: npm test --passWithNoTests
+      run: npm test -- --passWithNoTests
 
     - name: Deploy with gh-pages
       run: |
