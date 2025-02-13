@@ -3,6 +3,24 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero/Hero";
 import BgImage from "./assets/bg.jpg";
 import Equipments from "./components/Equipments/Equipments";
+import Banner from "./components/Banner/Banner";
+import Img1 from './assets/2.jpg'
+import Img2 from './assets/3.jpg'
+import Tabs from "./components/Tabs/Tabs";
+
+const BannerData = {
+  image: Img1,
+  title: "The Importants of Take care of yourself",
+  subtitle: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, reiciendis omnis incidunt debitis commodi inventore sequi excepturi, nihil tenetur alias perferendis adipisci expedita fugit nostrum aperiam est, sit in maxime.",
+  link: "#",
+}
+const Banner2Data = {
+  image: Img2,
+  title: "The Importants of Take care of yourself",
+  subtitle: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, reiciendis omnis incidunt debitis commodi inventore sequi excepturi, nihil tenetur alias perferendis adipisci expedita fugit nostrum aperiam est, sit in maxime.",
+  link: "#",
+}
+
 
 const bgStyle = {
   backgroundImage: `url(${BgImage})`,
@@ -22,7 +40,9 @@ const App = () => {
         <Hero />
       </div>
       <Equipments />
-
+      <Banner { ...BannerData}/>
+      {/* <Banner { ...Banner2Data}/> */}
+      <Tabs />
 
     </div>
   );
