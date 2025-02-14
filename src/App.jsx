@@ -41,8 +41,8 @@ const App = () => {
       </div>
       <Equipments />
       <Banner { ...BannerData}/>
-      {/* <Banner { ...Banner2Data}/> */}
       <Tabs />
+      <Banner { ...Banner2Data}/>
 
     </div>
   );
