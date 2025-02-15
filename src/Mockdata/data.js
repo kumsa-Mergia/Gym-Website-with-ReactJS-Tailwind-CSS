@@ -119,3 +119,52 @@ export const TestimonialsData = [
     delay: 1.1,
   },
 ];
+
+export const TestimonialData = [ 
+  {
+  id: 1,
+  name: "Abe Kebe",
+  text: "Strong conviction, often in the face of uncertainty, leading to action and reliance on something despite a lack of concrete evidence",
+  img: Image1, 
+  delay: 0.2, 
+  },
+
+  {
+    id:2,
+    name: "Henok Sultan",
+    text: "Accepting something as true, which can be based on evidence or personal opinion, without necessarily requiring the same level of commitment as faith",
+    img: Image1, 
+    delay: 0.5,   
+  },
+  {
+    id: 3,
+    name: "Abe Kebe",
+    text: "Strong conviction, often in the face of uncertainty, leading to action and reliance on something despite a lack of concrete evidence",
+    img: Image1, 
+    delay: 0.8, 
+    },
+  
+    {
+      id:4,
+      name: "Henok Sultan",
+      text: "Accepting something as true, which can be based on evidence or personal opinion, without necessarily requiring the same level of commitment as faith",
+      img: Image1, 
+      delay: 1.1,   
+    },
+    {
+      id: 5,
+      name: "Abe Kebe",
+      text: "Strong conviction, often in the face of uncertainty, leading to action and reliance on something despite a lack of concrete evidence",
+      img: Image1, 
+      delay: 1.5, 
+      },
+    
+      {
+        id:6,
+        name: "Henok Sultan",
+        text: "Accepting something as true, which can be based on evidence or personal opinion, without necessarily requiring the same level of commitment as faith",
+        img: Image1, 
+        delay: 1.8,   
+      },
+
+];
