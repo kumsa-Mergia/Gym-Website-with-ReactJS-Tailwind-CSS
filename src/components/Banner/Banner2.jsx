@@ -40,7 +40,7 @@ const Banner2 = () => {
               <button className="bg-cyan-500 items-center gap-2 rounded-md border-2 p-2 text-white">
                 Learn More
               </button>
-              <button className="border-bg-cyan-500  items-center px-5 rounded-lg rounded-md border-2 p-2 text-cyan-500">
+              <button className="hover:bg-cyan-500 hover:text-white border-bg-cyan-500  items-center px-5 rounded-lg rounded-md border-2 p-2 text-cyan-500">
                 Stay InTouch
               </button>
             </motion.div>
