@@ -2,8 +2,6 @@ import React from "react";
 import { TestimonialData } from "../../Mockdata/data";
 import Slider from "react-slick";
 
-
-
 const Testimonial = () => {
   const setting = {
     dots: true,
@@ -42,11 +40,11 @@ const Testimonial = () => {
     ],
   };
   return (
-    <div className="py-14 mb-10">
-      <div className="py-16">
+    <>
+      <div className="p-16 py-24">
         {/* Header Section */}
         <div className="text-left mb-10 max-w-[500px" space-y-2 mr-auto>
-          <h1 className="text-4xl font-bold">
+          <h1 className="text-4xl font-bold items-center">
             What are The Costomer Saying About US
           </h1>
         </div>
@@ -82,7 +80,7 @@ const Testimonial = () => {
           </Slider>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
