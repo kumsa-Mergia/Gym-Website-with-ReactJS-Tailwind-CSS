@@ -45,9 +45,6 @@ To build and deploy the project:
 npm run build
 ```
 The generated `dist` folder can be deployed to platforms like **Netlify, Vercel, or GitHub Pages**.
-
-
-
 ---
 **Author:** Kumsa Mergia
 

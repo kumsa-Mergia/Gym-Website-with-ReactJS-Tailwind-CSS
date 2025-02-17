@@ -9,7 +9,7 @@ import Img2 from './assets/3.jpg'
 import Tabs from "./components/Tabs/Tabs";
 import Testimonial from "./components/Testimonial/Testimonial";
 import Banner2 from "./components/Banner/Banner2"
-
+import Footer from "./components/Footer/Footer";
 const BannerData = {
   image: Img1,
   title: "The Importants of Take care of yourself",
@@ -22,8 +22,6 @@ const Banner2Data = {
   subtitle: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, reiciendis omnis incidunt debitis commodi inventore sequi excepturi, nihil tenetur alias perferendis adipisci expedita fugit nostrum aperiam est, sit in maxime.",
   link: "#",
 }
-
-
 const bgStyle = {
   backgroundImage: `url(${BgImage})`,
   backgroundRepeat: "no-repeat",
@@ -32,8 +30,6 @@ const bgStyle = {
   backgroundAttachment: "fixed",
   
 };
-
-
 const App = () => {
   return (
     <div className="overflow-x-hidden">
@@ -47,9 +43,9 @@ const App = () => {
       <Banner { ...Banner2Data}/>
       <Testimonial />
       <Banner2 />
+      <Footer />
 
     </div>
   );
 };
-
 export default App;
