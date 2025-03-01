@@ -2,6 +2,7 @@
   base = "/"
   publish = "build"
   command = "npm ci && npm run build"
+  
 
 [context.production.environment]
   NODE_ENV = "production"
