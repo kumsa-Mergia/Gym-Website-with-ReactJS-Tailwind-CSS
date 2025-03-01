@@ -1,7 +1,2 @@
 [build]
-  base = "/"
-  publish = "build"
-  command = "npm run build"
-
-[context.production.environment]
-  NODE_ENV = "production"
+  command = "npm ci && npm run build"
