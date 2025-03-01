@@ -6,8 +6,9 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [
     tailwindcss(),
-    react()],
+    react()
+  ],
+  build: {
+    outDir: 'dist' // Vite's default output directory
+  }
 })
-
-
-
