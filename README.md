@@ -48,5 +48,3 @@ The generated `dist` folder can be deployed to platforms like **Netlify, Vercel,
 ---
 **Author:** Kumsa Mergia
 
-Happy Coding! 🎉
-
